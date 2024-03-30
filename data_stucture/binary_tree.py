@@ -23,10 +23,14 @@ class BinaryTree:
 
 
     def PrintTree(self):
+        
         if self.left:
             self.left.PrintTree()
+
         print(self.data)
+
         if self.right:
+
             self.right.PrintTree()
 
 
