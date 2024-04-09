@@ -13,8 +13,7 @@ import sys
 # The function accepts INTEGER_ARRAY grades as parameter.
 #
 
-def gradingStudents(grades):
-    
+def grading_students(grades):
     
     rounded_grades = [i + (5 - (i % 5)) if ((5 - (i % 5)) < 3) and (i > 35) else i for i in grades]
             
@@ -25,4 +24,4 @@ if __name__ == '__main__':
 
     grades = [73, 67, 38, 33]
     
-    print(gradingStudents(grades))
+    print(grading_students(grades))
